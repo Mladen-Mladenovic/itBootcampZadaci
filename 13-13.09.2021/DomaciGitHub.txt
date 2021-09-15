@@ -1,0 +1,58 @@
+Link naloga: https://github.com/vetruska
+
+Last login: Tue Sep 14 23:55:44 on ttys000
+mladensImac:~ mladenimac$ cd ~/itbootcamp/
+mladensImac:itbootcamp mladenimac$ git clone git@github.com:vetruska/bootcampVezbanje.git
+Cloning into 'bootcampVezbanje'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+mladensImac:itbootcamp mladenimac$ cd ./bootcampVezbanje/
+mladensImac:bootcampVezbanje mladenimac$ ls
+vezba1.txt
+mladensImac:bootcampVezbanje mladenimac$ cat > MladenMladenovic.txt
+Mladen Mladenovic Visinac Vetruska                
+mladensImac:bootcampVezbanje mladenimac$ cat > vezba1.txt
+Neki tekst sam dodao.
+mladensImac:bootcampVezbanje mladenimac$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   vezba1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	MladenMladenovic.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mladensImac:bootcampVezbanje mladenimac$ git add .
+mladensImac:bootcampVezbanje mladenimac$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   MladenMladenovic.txt
+	modified:   vezba1.txt
+
+mladensImac:bootcampVezbanje mladenimac$ git commit -m "Izmenjen vezba1.txt, dodat MladenMladenovic.txt"
+[main 506e2ad] Izmenjen vezba1.txt, dodat MladenMladenovic.txt
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 MladenMladenovic.txt
+mladensImac:bootcampVezbanje mladenimac$ git push -u origin main
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 370 bytes | 370.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:vetruska/bootcampVezbanje.git
+   680d318..506e2ad  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+mladensImac:bootcampVezbanje mladenimac$ 
