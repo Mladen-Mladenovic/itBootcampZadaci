@@ -1,2 +1,4 @@
 # Ignore the weird invisible empty icon file
 Icon?
+# Ignore google doc filetype
+*.gdoc
